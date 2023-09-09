@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Sale</title>
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://kit.fontawesome.com/e78e88938c.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="bg-pink-100">
+    <div class="flex flex-col md:flex-row lg:flex-row items-center justify-around">
+      <div>
+        <h2 class="mb-6 text-center font-semibold">---SALE FEVER---</h2>
+        <P class="text-3xl font-bold mb-6"> Purchase TK 200 or <br> above & get <span class="text-red-600"> 20%
+            off</span></P>
+        <p class="inline-block font-medium">use promo code</p>
+        <button class="px-4 py-2 rounded-md text-white bg-pink-500">SELL200</button>
+      </div>
+      <div>
+        <img src="./images/Summer 1.png" alt="photo">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="flex justify-between mt-4 mb-4">
+      <!-- card container -->
+      <div class="w-3/4">
+        <h2 class="font-extrabold m-4">Kitchen Accessories</h2>
+        <!-- 1st step cards -->
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 ">
+          <div onclick="handleClickCard(this)"
+            class=" bg-slate-200 rounded-xl shadow-xl py-10 mx-2 font-semibold text-center">
+            <img class="mx-auto mb-6" src="./images/prod1.png" alt="">
+            <p class="rating mb-3"> <input class="mask mask-star-2 bg-orange-500" />
+              <input class="mask mask-star-2 bg-orange-500" checked />
+              <input class="mask mask-star-2 bg-orange-300" />
+              <input class="mask mask-star-2 bg-orange-300" />
+            </p>
+            <h2 class="font-bold">Kitchen Spoons</h2>
+            <p>Price: <span>125</span>Tk</p>
+          </div>
+          <div onclick="handleClickCard(this)"
+            class=" bg-slate-200 rounded-xl shadow-xl py-10 mx-2 font-semibold text-center">
+            <img class="mx-auto mb-6" src="./images/prod2.png" alt="">
+            <p class="rating mb-3"> <input class="mask mask-star-2 bg-orange-500" />
+              <input class="mask mask-star-2 bg-orange-500" checked />
+              <input class="mask mask-star-2 bg-orange-300" />
+              <input class="mask mask-star-2 bg-orange-300" />
+            </p>
+            <h2 class="font-bold">Kitchen Items</h2>
+            <p>Price: <span>130</span>Tk</p>
+          </div>
+          <div onclick="handleClickCard(this)"
+            class=" bg-slate-200 rounded-xl shadow-xl py-10 mx-2 font-semibold text-center">
+            <img class="mx-auto mb-6" src="./images/prod3.png" alt="">
+            <p class="rating mb-3"> <input class="mask mask-star-2 bg-orange-500" />
+              <input class="mask mask-star-2 bg-orange-500" checked />
+              <input class="mask mask-star-2 bg-orange-300" />
+              <input class="mask mask-star-2 bg-orange-300" />
+            </p>
+            <h2 class="font-bold">Kitchen Cooker</h2>
+            <p>Price: <span>140</span>Tk</p>
+          </div>
+        </div>
+        <!-- 2nd step cards -->
+        <h2 class="font-extrabold m-4">Sports ware</h2>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 ">
+
+          <div onclick="handleClickCard(this)"
+            class=" bg-slate-200 rounded-xl shadow-xl py-10 mx-2 font-semibold text-center">
+            <img class="mx-auto mb-6" src="./images/prod4.png" alt="">
+            <p class="rating mb-3"> <input class="mask mask-star-2 bg-orange-500" />
+              <input class="mask mask-star-2 bg-orange-500" checked />
+              <input class="mask mask-star-2 bg-orange-300" />
+              <input class="mask mask-star-2 bg-orange-300" />
+            </p>
+            <h2 class="font-bold">Sports Cap</h2>
+            <p>Price: <span>55</span>Tk</p>
+          </div>
+          <div onclick="handleClickCard(this)"
+            class=" bg-slate-200 rounded-xl shadow-xl py-10 mx-2 font-semibold text-center">
+            <img class="mx-auto mb-6" src="./images/prod5.png" alt="">
+            <p class="rating mb-3"> <input class="mask mask-star-2 bg-orange-500" />
+              <input class="mask mask-star-2 bg-orange-500" checked />
+              <input class="mask mask-star-2 bg-orange-300" />
+              <input class="mask mask-star-2 bg-orange-300" />
+            </p>
+            <h2 class="font-bold">Sports jacket</h2>
+            <p>Price: <span>165</span>Tk</p>
+          </div>
+          <div onclick="handleClickCard(this)"
+            class=" bg-slate-200 rounded-xl shadow-xl py-10 mx-2 font-semibold text-center ">
+            <img class="mx-auto mb-6" src="./images/prod6.png" alt="">
+            <p class="rating mb-3"> <input class="mask mask-star-2 bg-orange-500" />
+              <input class="mask mask-star-2 bg-orange-500" checked />
+              <input class="mask mask-star-2 bg-orange-300" />
+              <input class="mask mask-star-2 bg-orange-300" />
+            </p>
+            <h2 class="font-bold">Sports cades</h2>
+            <p>Price: <span>175</span>Tk</p>
+          </div>
+        </div>
+        <h2 class="font-extrabold m-4">Home Decoration</h2>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 ">
+
+          <div onclick="handleClickCard(this)"
+            class=" bg-slate-200 rounded-xl shadow-xl py-10 mx-2 font-semibold text-center">
+            <img class="mx-auto mb-6" src="./images/prod7.png" alt="">
+            <p class="rating mb-3"> <input class="mask mask-star-2 bg-orange-500" />
+              <input class="mask mask-star-2 bg-orange-500" checked />
+              <input class="mask mask-star-2 bg-orange-300" />
+              <input class="mask mask-star-2 bg-orange-300" />
+            </p>
+            <h2 class="font-bold">Cushion Chair</h2>
+            <p>Price: <span>150</span>Tk</p>
+          </div>
+          <div onclick="handleClickCard(this)"
+            class=" bg-slate-200 rounded-xl shadow-xl py-10 mx-2 font-semibold text-center">
+            <img class="mx-auto mb-6" src="./images/prod8.png" alt="">
+            <p class="rating mb-3"> <input class="mask mask-star-2 bg-orange-500" />
+              <input class="mask mask-star-2 bg-orange-500" checked />
+              <input class="mask mask-star-2 bg-orange-300" />
+              <input class="mask mask-star-2 bg-orange-300" />
+            </p>
+            <h2 class="font-bold">Folding Chair</h2>
+            <p>Price: <span>150</span>Tk</p>
+          </div>
+          <div onclick="handleClickCard(this)"
+            class=" bg-slate-200 rounded-xl shadow-xl py-10 mx-2 font-semibold text-center">
+            <img class="mx-auto mb-6" src="./images/prod9.png" alt="">
+            <p class="rating mb-3"> <input class="mask mask-star-2 bg-orange-500" />
+              <input class="mask mask-star-2 bg-orange-500" checked />
+              <input class="mask mask-star-2 bg-orange-300" />
+              <input class="mask mask-star-2 bg-orange-300" />
+            </p>
+            <h2 class="font-bold">Sofa</h2>
+            <p>Price: <span>550</span>Tk</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- coupon area -->
+      <div class="w-1/4 mt-20 ml-5 ">
+        <div class="">
+          <div class="ml-2 mb-4 ">
+            <h2 class="font-bold text-xl">Have Coupon?</h2>
+            <div class="form-control">
+              <div class="input-group">
+                <input id="coupon-code"  type="text" placeholder="coupon-code" class="input input-bordered">
+                <button disabled onclick="apply()" id="apply-btn" class="btn btn-square bg-pink-500">Apply</button>
+              </div>
+            </div>
+           
+          </div>
+          <div id="selected-items"></div>
+          
+
+          <div class="ml-2 font-semibold">
+            <h2> Total Price Tk: <span id="total">00</span></h2>
+            <p >Discount Tk: <span id="discount">00</span></p>
+            <h3 >Total Pay Tk: <span id="total-pay">00</span></h3>
+          </div>
+          
+          
+          <div>
+             <!-- Open the modal using ID.showModal() method -->
+             <button disabled class="btn bg-pink-500 rounded mt-8 " onclick="my_modal_1.showModal()" id="purchase">make Purchase</button>
+             <dialog id="my_modal_1" class="modal">
+               <div class="modal-box">
+                 <h3 class="font-bold text-lg"></h3>
+                 <img class="mx-auto" src="./images/congo.png" alt="logo">
+                 <p class="py-4 text-5xl text-center font-bold">Congratulations</p>
+                 <p class="text-center font-bold">You purchase the product</p>
+                 <div class="modal-action">
+                   <form method="dialog">
+                     <!-- if there is a button in form, it will close the modal -->
+                     <button onclick="refreshPage();" id="go-home" class="btn bg-pink-500 rounded px-6 py-3 mr-44">Go Home</button>
+                   </form>
+                 </div>
+               </div>
+             </dialog>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
